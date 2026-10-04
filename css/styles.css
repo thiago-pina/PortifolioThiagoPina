@@ -418,7 +418,8 @@ footer .flex {
 }
 
 .logo-footer img{
-    height: 90px;
+    width: 190px;
+    height: auto;
 }
 
 .borda {
