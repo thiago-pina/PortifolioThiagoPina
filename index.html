@@ -159,24 +159,29 @@
                                 Dashboard Executivo<span>Power BI</span>
                             </div>
                         </div>
-                    </a>           
-                    </div>
+                    </a>
                 </div>
+            </div>
             </div>
         </section>
 
         <section class="formulario" id="contato">
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
-                <form action="">
+                <form name="contato" method="POST" data-netlify="true">
+
                     <input type="text" name="nome" placeholder="Seu nome" required>
+
                     <input type="email" name="email" placeholder="Seu e-mail" required>
+
                     <input type="text" name="assunto" placeholder="Assunto">
+
                     <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
 
                     <div class="btn-enviar">
                         <input type="submit" value="ENVIAR">
                     </div>
+
                 </form>
             </div>
         </section>
