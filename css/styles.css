@@ -168,6 +168,12 @@ section.topo-site{
     padding: 40px 4%;
 }
 
+.logo img {
+    width: 240px;
+    height: auto;
+    display: block;
+}
+
 .topo-site .flex {
     align-items: center;
     justify-content: center;
@@ -287,23 +293,35 @@ section.portfolio{
 }
 
 section.portfolio .flex {
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
     margin-top: 60px;
 }
+
+.projeto-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .img-port {
     width: 360px;
     height: 460px;
     background-size: cover;
     background-position: 100% 0%;
-    transition: 8s;
+    transition: .5s;
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    overflow: hidden;
 }
 
 .img-port:hover {
     background-position: 100% 100%;
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 255, 8, 0.25);
 }
 
 .overlay {
@@ -314,14 +332,21 @@ section.portfolio .flex {
     height: 100%;
     background-color: #000000b8;
     border-radius: 40px;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    text-align: center;
     font-size: 24px;
     font-weight: 600;
     color: #fff;
     opacity: 0;
     transition: .5s;
+}
+.overlay span {
+    color: #00ff08;
 }
 
 .overlay:hover {
