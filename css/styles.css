@@ -710,3 +710,11 @@ body.pagina-confirmacao {
     }
 
 }
+
+@media screen and (max-width: 340px) {
+
+    section.especialidades .flex {
+        height: 520px;
+    }
+
+}
